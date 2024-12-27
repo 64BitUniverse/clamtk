@@ -39,15 +39,9 @@ class Ui_MainWindow(object):
 
         self.Network = QToolButton(self.gridLayoutWidget)
         self.Network.setObjectName(u"Network")
-        icon = QIcon()
-        iconThemeName = u"preferences-system-network"
-        if QIcon.hasThemeIcon(iconThemeName):
-            icon = QIcon.fromTheme(iconThemeName)
-        else:
-            icon.addFile(u".", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-
+        icon = QIcon(QIcon.fromTheme(u"preferences-system-network"))
         self.Network.setIcon(icon)
-        self.Network.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        self.Network.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
 
         self.MainMenu.addWidget(self.Network, 1, 2, 1, 1)
 
@@ -60,7 +54,7 @@ class Ui_MainWindow(object):
         self.Settings.setSizePolicy(sizePolicy)
         icon1 = QIcon(QIcon.fromTheme(u"preferences-system"))
         self.Settings.setIcon(icon1)
-        self.Settings.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        self.Settings.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
 
         self.MainMenu.addWidget(self.Settings, 1, 0, 1, 1)
 
@@ -70,7 +64,7 @@ class Ui_MainWindow(object):
         self.History.setSizePolicy(sizePolicy)
         icon2 = QIcon(QIcon.fromTheme(u"document-open-recent"))
         self.History.setIcon(icon2)
-        self.History.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        self.History.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
 
         self.MainMenu.addWidget(self.History, 3, 0, 1, 1)
 
@@ -78,15 +72,9 @@ class Ui_MainWindow(object):
         self.Whitelist.setObjectName(u"Whitelist")
         sizePolicy.setHeightForWidth(self.Whitelist.sizePolicy().hasHeightForWidth())
         self.Whitelist.setSizePolicy(sizePolicy)
-        icon3 = QIcon()
-        iconThemeName = u"security-high"
-        if QIcon.hasThemeIcon(iconThemeName):
-            icon3 = QIcon.fromTheme(iconThemeName)
-        else:
-            icon3.addFile(u".", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-
+        icon3 = QIcon(QIcon.fromTheme(u"security-high"))
         self.Whitelist.setIcon(icon3)
-        self.Whitelist.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        self.Whitelist.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
 
         self.MainMenu.addWidget(self.Whitelist, 1, 1, 1, 1)
 
@@ -94,7 +82,7 @@ class Ui_MainWindow(object):
         self.Scheduler.setObjectName(u"Scheduler")
         icon4 = QIcon(QIcon.fromTheme(u"document-properties"))
         self.Scheduler.setIcon(icon4)
-        self.Scheduler.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        self.Scheduler.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
 
         self.MainMenu.addWidget(self.Scheduler, 1, 3, 1, 1)
 
@@ -107,15 +95,9 @@ class Ui_MainWindow(object):
         self.Quarantine.setObjectName(u"Quarantine")
         sizePolicy.setHeightForWidth(self.Quarantine.sizePolicy().hasHeightForWidth())
         self.Quarantine.setSizePolicy(sizePolicy)
-        icon5 = QIcon()
-        iconThemeName = u"user-trash-full"
-        if QIcon.hasThemeIcon(iconThemeName):
-            icon5 = QIcon.fromTheme(iconThemeName)
-        else:
-            icon5.addFile(u".", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-
+        icon5 = QIcon(QIcon.fromTheme(u"user-trash-full"))
         self.Quarantine.setIcon(icon5)
-        self.Quarantine.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        self.Quarantine.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
 
         self.MainMenu.addWidget(self.Quarantine, 3, 1, 1, 1)
 
@@ -147,15 +129,9 @@ class Ui_MainWindow(object):
 
         self.ScanaFile = QToolButton(self.gridLayoutWidget)
         self.ScanaFile.setObjectName(u"ScanaFile")
-        icon6 = QIcon()
-        iconThemeName = u"document-new"
-        if QIcon.hasThemeIcon(iconThemeName):
-            icon6 = QIcon.fromTheme(iconThemeName)
-        else:
-            icon6.addFile(u".", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-
+        icon6 = QIcon(QIcon.fromTheme(u"document-new"))
         self.ScanaFile.setIcon(icon6)
-        self.ScanaFile.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        self.ScanaFile.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
 
         self.MainMenu.addWidget(self.ScanaFile, 5, 0, 1, 1)
 
@@ -163,15 +139,9 @@ class Ui_MainWindow(object):
         self.Update.setObjectName(u"Update")
         sizePolicy.setHeightForWidth(self.Update.sizePolicy().hasHeightForWidth())
         self.Update.setSizePolicy(sizePolicy)
-        icon7 = QIcon()
-        iconThemeName = u"software-update-available"
-        if QIcon.hasThemeIcon(iconThemeName):
-            icon7 = QIcon.fromTheme(iconThemeName)
-        else:
-            icon7.addFile(u".", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-
+        icon7 = QIcon(QIcon.fromTheme(u"software-update-available"))
         self.Update.setIcon(icon7)
-        self.Update.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        self.Update.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
 
         self.MainMenu.addWidget(self.Update, 7, 0, 1, 1)
 
@@ -182,29 +152,17 @@ class Ui_MainWindow(object):
         sizePolicy1.setVerticalStretch(0)
         sizePolicy1.setHeightForWidth(self.UpdateAssistant.sizePolicy().hasHeightForWidth())
         self.UpdateAssistant.setSizePolicy(sizePolicy1)
-        icon8 = QIcon()
-        iconThemeName = u"system-help"
-        if QIcon.hasThemeIcon(iconThemeName):
-            icon8 = QIcon.fromTheme(iconThemeName)
-        else:
-            icon8.addFile(u".", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-
+        icon8 = QIcon(QIcon.fromTheme(u"system-help"))
         self.UpdateAssistant.setIcon(icon8)
-        self.UpdateAssistant.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        self.UpdateAssistant.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
 
         self.MainMenu.addWidget(self.UpdateAssistant, 7, 1, 1, 1)
 
         self.ScanaDirectory = QToolButton(self.gridLayoutWidget)
         self.ScanaDirectory.setObjectName(u"ScanaDirectory")
-        icon9 = QIcon()
-        iconThemeName = u"folder-documents"
-        if QIcon.hasThemeIcon(iconThemeName):
-            icon9 = QIcon.fromTheme(iconThemeName)
-        else:
-            icon9.addFile(u".", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-
+        icon9 = QIcon(QIcon.fromTheme(u"folder-documents"))
         self.ScanaDirectory.setIcon(icon9)
-        self.ScanaDirectory.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        self.ScanaDirectory.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
 
         self.MainMenu.addWidget(self.ScanaDirectory, 5, 1, 1, 1)
 
@@ -212,29 +170,17 @@ class Ui_MainWindow(object):
         self.About.setObjectName(u"About")
         sizePolicy.setHeightForWidth(self.About.sizePolicy().hasHeightForWidth())
         self.About.setSizePolicy(sizePolicy)
-        icon10 = QIcon()
-        iconThemeName = u"help-about"
-        if QIcon.hasThemeIcon(iconThemeName):
-            icon10 = QIcon.fromTheme(iconThemeName)
-        else:
-            icon10.addFile(u".", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-
+        icon10 = QIcon(QIcon.fromTheme(u"help-about"))
         self.About.setIcon(icon10)
-        self.About.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        self.About.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
 
         self.MainMenu.addWidget(self.About, 7, 2, 1, 1)
 
         self.Analysis = QToolButton(self.gridLayoutWidget)
         self.Analysis.setObjectName(u"Analysis")
-        icon11 = QIcon()
-        iconThemeName = u"system-search"
-        if QIcon.hasThemeIcon(iconThemeName):
-            icon11 = QIcon.fromTheme(iconThemeName)
-        else:
-            icon11.addFile(u".", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-
+        icon11 = QIcon(QIcon.fromTheme(u"system-search"))
         self.Analysis.setIcon(icon11)
-        self.Analysis.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        self.Analysis.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
 
         self.MainMenu.addWidget(self.Analysis, 5, 2, 1, 1)
 
